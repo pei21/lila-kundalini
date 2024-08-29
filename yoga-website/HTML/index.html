@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lila - Kundalini Yoga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../PUBLIC/Style/base.css" />
+    <link rel="stylesheet" href="../PUBLIC/Style/breakpoint.css" />
+    <script src="../action.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- Logo Section -->
+      <nav class="navbar">
+        <!-- Burger Icon -->
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <a href="#" class="logo"> BlissFlow </a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+          <li><a href="../HTML/mystory.html">我的故事</a></li>
+          <li><a href="#">服務內容</a></li>
+          <li><a href="#">課程</a></li>
+          <li><a href="#">分享資源</a></li>
+        </ul>
+
+        <!-- Login Button -->
+        <a href="#" class="login-btn">
+          登入/註冊
+          <svg
+            class="login-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="white"
+            width="20px"
+            height="20px"
+          >
+            <path
+              d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
+            />
+          </svg>
+        </a>
+      </nav>
+    </header>
+    <!-- Hero Section Start -->
+    <!-- <section id="hero">
+      <div class="hero-slider">
+        <-- Slide 1 -->
+    <!-- <div class="hero-slide slide1">
+      <div class="hero-content">
+        <h1>與自己的對話</h1>
+        <p>從找內心的平靜到身心靈的結合</p>
+        <button class="cta-button">電話諮詢</button>
+      </div>
+    </div> -->
+
+    <section>
+      <div class="hero">
+        <div class="arrow left" onclick="preview()">
+          <img
+            src="../PUBLIC/Images/Circled left.png"
+            width="30"
+            feight="30"
+            alt="arrow image to scroll left "
+          />
+        </div>
+        <div class="heroImages hero-darker action-1">
+          <div class="figure hero-content">
+            <h1>與自己的對話</h1>
+            <p>
+              無論你是尋找放鬆的時刻，還是渴望心靈的升華，尋找內心的平靜到身心靈的。結合透過專注的冥想與身心靈的修習，實現自我探索與內在的深度連結。
+            </p>
+            <a href="line://ti/p/@yourlineid" class="cta-button"
+              >Line 即時諮詢</a
+            >
+          </div>
+        </div>
+
+        <div class="heroImages hero-darker action-2">
+          <div class="figure hero-content">
+            <h2>手捏香 祝福牌卡 滿月冥想</h2>
+            <p>
+              我們邀請你參與一場心靈的深度探索。透過手捏香的創作，你將以心意凝聚一縷香火，傳遞祝福與感恩。在滿月的光輝下，透過冥想重新連接宇宙的能量，達到內心的平衡與蛻變。。
+            </p>
+            <a href="line://ti/p/@yourlineid" class="cta-button">暸解更多</a>
+          </div>
+        </div>
+
+        <div class="heroImages hero-lighter action-3">
+          <div class="figure hero-content hero-content3">
+            <h2>靜心茶道，共享療癒時光</h2>
+            <p>
+              在一杯香茗的溫暖中，你將感受到心靈的安定與平和。讓我們一起在這段靜謐的時光裡，重新連接內在的寧靜與自然的節奏
+            </p>
+            <p class="p-set">2024. 09 01 與你/妳喝茶</p>
+            <a href="line://ti/p/@yourlineid" class="cta-button">暸解更多</a>
+          </div>
+        </div>
+
+        <div class="arrow right" onclick="next()">
+          <img
+            src="../PUBLIC/Images/Circled Right.png"
+            width="30"
+            feight="30"
+            alt="arrow-right"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section End -->
+
+    <section id="about">
+      <div class="content">
+        <div class="text">
+          <h2>踏上平和之路，迎接全新自我</h2>
+          <p>
+            在
+            BlissFlow，我們相信內在的平和與自我接納，是達到身心靈平衡的關鍵。我們的課程致力於幫助您達到這種和諧，無論您是初學者還是資深的修行者。
+          </p>
+        </div>
+        <div class="image">
+          <img src="../PUBLIC/Images/candle.png" alt="Image description" />
+          <!-- Replace with your image path -->
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <div class="feature position">
+        <img
+          class="image1"
+          src="../PUBLIC/Images/mystory-lila.png"
+          alt="activity"
+        />
+        <img class="image2" src="../PUBLIC/Images/brown.png" alt="Brown" />
+      </div>
+      <div class="feature">
+        <h3>與大自然深度共鳴</h3>
+        <p>呼吸大自然的力量，連結內在靈性</p>
+        <h3>心靈修行的轉變</h3>
+        <p>探索深層的內在平靜，並發現自己的新面貌。</p>
+      </div>
+      <div class="feature">
+        <img
+          class="image2"
+          src="../PUBLIC/Images/activity2.jpg"
+          alt="Meditation"
+        />
+      </div>
+    </section>
+    <!-- feature1 -->
+    <section id="features1">
+      <div class="feature1 feature-left">
+        <img class="image" src="../PUBLIC/Images/yoga.png" alt="Tree" />
+      </div>
+      <div class="feature1 feature-right">
+        <h3>心靈修行的轉變</h3>
+        <div class="icons-container">
+          <div class="icon">
+            <img
+              src="../PUBLIC/Images/Fire Heart.png"
+              alt="Icon 1"
+              width="50px"
+              height="50px"
+            />
+            <p>
+              定期練習 Kundalini
+              瑜伽，有助於減少焦慮和壓力，平衡情緒，讓您擁有更加平和的心態。透過冥想與專注，Kundalini
+              讓心靈得到深層的放鬆和療癒。
+            </p>
+          </div>
+          <div class="icon">
+            <img
+              src="../PUBLIC/Images/Floating Guru.png"
+              alt="Icon 1"
+              width="50px"
+              height="50px"
+            />
+            <p>
+              Kundalini
+              瑜伽以其獨特的冥想和靜心技巧，幫助您連結更高層次的意識，提升靈性成長。這種內在的覺醒，能夠帶來深遠的自我了解與靈性啟迪
+            </p>
+          </div>
+          <div class="icon">
+            <img
+              src="../PUBLIC/Images/Lotus.png"
+              alt="Icon 1"
+              width="50px"
+              height="50px"
+            />
+            <p>
+              Kundalini
+              瑜伽通過呼吸練習和特定的體位法，幫助您喚醒並激發內在的能量，提升自信與內在力量，讓您能夠更好地面對生活中的挑戰。
+            </p>
+          </div>
+
+          <div class="icon icon-4">
+            <img
+              src="../PUBLIC/Images/Irrigation.png"
+              alt="Icon 1"
+              width="50px"
+              height="50px"
+            />
+            <p>
+              正向的能量不僅能夠提升我們的自身狀態，還能夠吸引到同樣的積極能量，使我們的生活變得更加豐富和充實。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- feature1- end -->
+
+    <!-- course atart -->
+    <section class="courses">
+      <h2>課程介紹</h2>
+      <h4>適合各種程度的練習者 • 我們的課程都專注於培養身心靈的整體健康</h4>
+      <div class="course-container">
+        <div class="course">
+          <img src="../PUBLIC/Images/course1.png" alt="基礎入門" />
+          <h4>基礎入門</h4>
+          <p>
+            介紹Kundalini瑜伽的基本概念和歷史，簡單的呼吸練習，基本的體位法，和冥想。
+          </p>
+          <p>時長: 90分鐘。</p>
+          <div class="moreBTN">
+            <img
+              src="../PUBLIC/Images/Forward Button.png"
+              alt="Icon 1"
+              width="50px"
+              height="50px"
+            />
+          </div>
+        </div>
+        <div class="course">
+          <img src="../PUBLIC/Images/course2.png" alt="能量提升" />
+          <h4>能量提升</h4>
+          <p>
+            重點放在激活和提升內在能量的練習，身體上如Kriyas（動作序列）、呼吸技巧和冥想。
+          </p>
+          <p>時長: 60分鐘。</p>
+          <div class="moreBTN">
+            <img
+              src="../PUBLIC/Images/Forward Button.png"
+              alt="Icon 1"
+              width="50px"
+              height="50px"
+            />
+          </div>
+        </div>
+        <div class="course">
+          <img src="../PUBLIC/Images/course3.png" alt="解壓放鬆" />
+          <h4>解壓放鬆</h4>
+          <p>
+            專注於緩解壓力和放鬆，使用深度冥想、音頻療法（如聲音碟）、輕柔的體位法和放鬆技巧。
+          </p>
+          <p>時長: 90分鐘。</p>
+          <div class="moreBTN">
+            <img
+              src="../PUBLIC/Images/Forward Button.png"
+              alt="Icon 1"
+              width="50px"
+              height="50px"
+            />
+          </div>
+        </div>
+
+        <div class="course course-4">
+          <img src="../PUBLIC/Images/course4.png" alt="感激冥想" />
+          <h4>基礎入門</h4>
+          <p>
+            當我們的內在能量達到一定的頻率時，吸引力源於自我真實和內在的光輝。感激與自信使內在變得更加愉快和充實。
+          </p>
+          <p>時長: 90分鐘。</p>
+          <div class="moreBTN">
+            <img
+              src="../PUBLIC/Images/Forward Button.png"
+              alt="Icon 1"
+              width="50px"
+              height="50px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- course end -->
+    <!-- event start -->
+    <section class="events">
+      <h2>活動預告</h2>
+      <h4>我們誠摯邀請你/妳參與成長，在旅程中感受到內心的寧靜與愉悅。</h4>
+      <div class="event-container">
+        <div class="event">
+          <img src="../PUBLIC/Images/event1.jpg" alt="基礎入門" />
+          <div class="event-detail">
+            <h4>中秋滿月冥想 - 迎來豐盛</h4>
+            <p>活動地點: 台北信義區</p>
+            <p>活動日期: 2024. 09. 20</p>
+            <p>
+              在這個特別的中秋滿月之夜，與我們一起進行一場深度冥想，迎接豐收與滿足的能量。透過指導式冥想和音缽療癒，我們將帶領你釋放壓力，並打開心靈的豐盛之門。讓這個中秋成為你靈性成長的重要里程碑。
+            </p>
+
+            <div class="moreBTN">
+              <p>更多內容</p>
+              <img
+                src="../PUBLIC/Images/Forward Button.png"
+                alt="Icon 1"
+                width="50px"
+                height="50px"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="event">
+          <img src="../PUBLIC/Images/event2.jpg" alt="能量提升" />
+          <div class="event-detail">
+            <h4>豐盛與自我能量的旅程</h4>
+            <p>活動地點: 台中烏日</p>
+            <p>活動日期: 2024. 10. 10</p>
+            <p>
+              重這是一場致力於吸引豐盛與繁榮的昆達里尼冥想活動。在這個專注於富足能量的工作坊中，你將學習如何釋放內在的限制信念，並通過特定的冥想和呼吸練習來吸引財富、健康和愛。讓我們一起開啟豐盛的能量之門，並將這些正能量融入到日常生活中，達到身心靈的豐盈。
+            </p>
+            <div class="moreBTN">
+              <p>更多內容</p>
+              <img
+                src="../PUBLIC/Images/Forward Button.png"
+                alt="Icon 1"
+                width="50px"
+                height="50px"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="event">
+          <img src="../PUBLIC/Images/event3.jpg" alt="解壓放鬆" />
+          <div class="event-detail">
+            <h4>淨身能量的淨化儀式</h4>
+            <p>活動地點: 高雄三民</p>
+            <p>活動日期: 2024. 11. 20</p>
+            <p>
+              淨化你的能量場，釋放累積的負面情緒和壓力。在這個昆達里尼能量淨化儀式中，我們將利用古老的咒語、手印和呼吸技術，幫助你清理身心的負能量，恢復身體的自然平衡。參與這個淨化的過程，讓你的能量重新煥發光彩，體驗深層的療癒與重生。
+            </p>
+            <div class="moreBTN">
+              <p>更多內容</p>
+              <img
+                src="../PUBLIC/Images/Forward Button.png"
+                alt="Icon 1"
+                width="50px"
+                height="50px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- event end -->
+
+    <!-- hidden newsletter - 等會員登入條款完成再重新加入 -->
+    <!-- newsletter start -->
+
+    <!-- <section class="newsletter">
+      <h2>訂閱我們的電子報，讓瑜伽成為你生活的一部分。我們每月提供：</h2>
+      <div class="form Ncontent">
+        <p>讓瑜伽成為你生活的一部分。我們每月提供探索瑜伽的深度。</p>
+        <form class="newsletter-form">
+          <div class="description">
+            <h4>探索瑜伽的深度</h4>
+            <div class="Pcontent">
+              <p>專業的瑜伽技巧：提升你的練習，從基礎到進階，適合各種水平。</p>
+              <p>深度冥想指導：幫助你放鬆心靈，找到內在的平靜與平衡。</p>
+              <p>最新課程和活動資訊：第一時間了解我們的最新課程和工作坊。</p>
+              <p>靈性成長建議：探索瑜伽的靈性面向，促進自我發展。</p>
+              <p>專屬優惠和活動：享受會員專屬的優惠和參加特別活動的機會。</p>
+            </div>
+          </div>
+          <div class="Fill-form">
+            <input type="text" name="name" placeholder="姓名" required />
+            <input type="email" name="email" placeholder="E-mail" required />
+            <button type="submit">立即訂閱</button>
+          </div>
+        </form>
+      </div>
+    </section> -->
+    <!-- newsletter end -->
+
+    <!-- contact start -->
+    <!-- contact :start -->
+    <section>
+      <div class="message">
+        <h2>我們很樂意聽到你的聲音</h2>
+        <p>如果你想分享，歡迎留言,我將盡快回覆。</p>
+      </div>
+
+      <div class="contactArea">
+        <div class="semicircle">
+          <img src="../public/images/contatc-image.png" alt="Your Image" />
+        </div>
+
+        <div class="container">
+          <form action="submit_form.php" method="post" class="contact-form">
+            <div class="name-fields">
+              <div class="field">
+                <label for="lastName">姓</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  placeholder="請輸入您的姓"
+                  name="lastName"
+                  required
+                />
+              </div>
+
+              <div class="field">
+                <label for="firstName">名字</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  placeholder="請輸入您的名字"
+                  name="firstName"
+                  required
+                />
+              </div>
+            </div>
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="請輸入您的電子郵件"
+              name="email"
+              required
+            />
+
+            <label for="subject">標題</label>
+            <input
+              type="text"
+              id="subject"
+              placeholder="請輸入您的標題"
+              name="subject"
+              required
+            />
+
+            <label for="message">內容：你想跟我們分享什麼</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="請輸入您的訊息"
+              rows="4"
+              required
+            ></textarea>
+
+            <div class="submitBTN">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact :end -->
+
+    <!-- contact end -->
+
+    <!-- social-media-icon :start-->
+    <section>
+      <div class="contact-information">
+        <p>電子郵件: hello@tejgeetkaur.com</p>
+        <!-- <p>電話: +1(123) 456-7890</p> -->
+        <p>地址: BlissFlow.studio</p>
+      </div>
+
+      <div class="social-icon">
+        <ul>
+          <li>
+            <a href="" target="_blank"
+              ><img
+                src="../public/images/Instagram.png"
+                alt="instagram"
+                width="30"
+                height="30"
+            /></a>
+          </li>
+
+          <li>
+            <a href="" target="_blank"
+              ><img
+                src="../public/images/LINE.png"
+                alt="line"
+                width="30"
+                height="30"
+            /></a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.youtube.com/@%E5%BF%83%E7%9A%84%E6%97%8B%E5%BE%8BBlissflow"
+              target="_blank"
+              ><img
+                src="../public/images/YouTube.png"
+                alt="youtube"
+                width="30"
+                height="30"
+            /></a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank"
+              ><img
+                src="../public/images/Facebook.png"
+                alt="facebook"
+                width="30"
+                height="30"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- social-media-icon end -->
+    <footer>
+      <p>©CopyRight 2024 | BlissFlow | Designed by Pei</p>
+      <p>Privacy Policy | Terms of Use</p>
+    </footer>
+  </body>
+</html>

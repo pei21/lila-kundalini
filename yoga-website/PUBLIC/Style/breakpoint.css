@@ -1,0 +1,1131 @@
+/* Responsive homepage Styles */
+@media screen and (max-width: 480px) {
+  /* nav */
+  .nav-links {
+    display: none; /* Hide nav-links by default on small screens */
+    flex-direction: column; /* Stack links vertically */
+    background-color: #dbe4c6; /* Background color for mobile */
+    position: absolute; /* Overlay position */
+    top: 70px; /* Adjust based on header height */
+    right: 0;
+    left: 0; /* Full width */
+    text-align: center; /* Center text alignment */
+    z-index: 10; /* Ensure it’s on top of other content */
+    transform: translateY(-100%); /* Hide off-screen by default */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .nav-active {
+    padding: 20px;
+    display: flex; /* Show links when active */
+    transform: translateY(0); /* Slide down to show */
+  }
+
+  .burger {
+    display: flex; /* Show burger icon on small screens */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer; /* Change cursor to pointer */
+    z-index: 20; /* Ensure it’s above the nav */
+  }
+
+  .burger div {
+    width: 30px;
+    height: 3px;
+    background-color: #333; /* Color of burger lines */
+    margin: 4px 0;
+  }
+
+  .login-btn {
+    padding: 10px; /* Adjust padding for small screens */
+    font-size: 0; /* Hide text */
+    width: 40px; /* Adjust width */
+    justify-content: center; /* Center icon */
+  }
+
+  .login-icon {
+    margin-left: 0; /* Remove margin if needed */
+  }
+
+  .login-btn::before {
+    content: ""; /* Pseudo-element for icon */
+    display: none; /* Hide if not needed */
+    width: 20px;
+    height: 20px;
+    background: url("path/to/your/icon.svg") no-repeat center center;
+    background-size: contain; /* Scale icon */
+  }
+
+  .login-btn span {
+    display: none; /* Hide any text */
+  }
+  /* hero */
+  .heroImages {
+    height: 80vh; /* Make the image fill the viewport height on small screens */
+    background-size: cover; /* Ensures the background covers the element */
+    background-position: center; /* Centers the background image */
+  }
+
+  .hero-content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    color: #f2f2f2;
+    text-align: left;
+    margin-top: 30%;
+    margin-left: 50px;
+    margin-right: 90px;
+  }
+  .hero-content h1 {
+    color: #f2f2f2;
+    font-size: 30px;
+    text-align: center;
+    z-index: 3;
+  }
+  .hero-content h2 {
+    font-size: 23px;
+    z-index: 3;
+  }
+  .hero-content p {
+    line-height: 20px;
+    font-size: 12px;
+    margin: 20px 0px 40px 0px;
+    z-index: 3;
+  }
+
+  .hero-content3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #745740;
+  }
+
+  .hero-content3 p {
+    font-size: 16px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .p-set {
+    margin-top: 30px;
+    color: #236533;
+  }
+  .cta-button {
+    background-color: #848c73;
+    text-align: center;
+    width: 50%;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+  }
+  /* about */
+
+  .text h2 {
+    font-size: 23px;
+  }
+  .text p {
+    display: none;
+  }
+  /* feature */
+  #features {
+    width: 100%;
+    height: 60vh;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0;
+    align-content: center;
+    align-items: center;
+  }
+  .feature img {
+    max-width: 100%;
+    height: auto;
+  }
+  .image1 {
+    position: relative;
+    width: 50%;
+    height: auto;
+    z-index: 2;
+  }
+  .image2 {
+    display: none;
+  }
+  .feature h3 {
+    font-size: 20px; /* Adjust font size as needed */
+    margin: 10px 0; /* Space above and below the heading */
+  }
+
+  .feature p {
+    font-size: 12px; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+  }
+  /* feature 1 */
+  #features1 {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    grid-template-rows: auto auto; /* Two rows */
+    grid-template-areas:
+      "left"
+      "right"; /* Image at the top, text at the bottom */
+  }
+
+  .feature-left {
+    grid-area: left; /* Assign grid area */
+  }
+
+  .feature-right {
+    grid-area: right; /* Assign grid area */
+  }
+
+  /* Feature container styles */
+  #features1 {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    grid-template-rows: auto auto; /* Two rows */
+    grid-template-areas:
+      "right"
+      "left"; /* Text at the top, image at the bottom */
+  }
+
+  .feature-left {
+    grid-area: left; /* Assign grid area */
+  }
+
+  .feature-right {
+    grid-area: right; /* Assign grid area */
+  }
+
+  .feature-left {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+  }
+
+  .feature-left img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .feature-right {
+    border: 1px solid #236533;
+    background-color: #e9f0e0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .feature1 h3 {
+    color: #745740;
+    font-size: 20px;
+    margin: 80px 40px;
+  }
+
+  .icons-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon img {
+    width: 30px;
+    height: 30px;
+  }
+  .icons-container p {
+    line-height: 20px;
+    font-size: 12px;
+    color: #745740;
+    text-align: center;
+    margin: 30px;
+  }
+  .feature1 h3 {
+    color: #745740;
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  /* course start */
+
+  .courses h2 {
+    color: #745740;
+    font-size: 23px;
+  }
+  .courses h4 {
+    display: none;
+  }
+  .course-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .course p {
+    line-height: 20px;
+    color: #745740;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin: 20px;
+    font-size: 12px;
+    text-align: left;
+  }
+  .course img {
+    max-width: 100%;
+    border-radius: 12px;
+    height: auto;
+    margin: 10px;
+  }
+  /* event start */
+  .events h2 {
+    color: #745740;
+    font-size: 23px;
+  }
+  .events h4 {
+    display: none;
+  }
+  .event {
+    border: 2px solid #8da66b;
+    border-radius: 12px;
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .event img {
+    max-width: 100%;
+    margin: 20px;
+    border-radius: 12px;
+  }
+  .event p {
+    line-height: 20px;
+    color: #745740;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin: 20px;
+    font-size: 12px;
+    text-align: center;
+  }
+  /* message start */
+  .message h2 {
+    background-color: #e9f0e0;
+    color: #745740;
+    display: flex;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+  }
+  .message p {
+    margin: 0;
+    padding: 50px;
+    background-color: #e9f0e0;
+    color: #745740;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+  }
+  .contactArea {
+    background-color: #e9f0e0;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  .contact-form {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #e9f0e0;
+  }
+  input,
+  textarea {
+    width: 90%;
+    font-size: 12px;
+  }
+  label {
+    font-size: 16px;
+  }
+  .name-fields {
+    display: flex;
+    gap: 10px;
+  }
+
+  .submitBTN button {
+    font-size: 12px; /* Adjust the font size */
+  }
+  /* contact-info */
+  .concontact-information {
+    font-size: 12px;
+  }
+  /* social-icon */
+  .social-icon img {
+    width: 20px;
+    height: 20px;
+  }
+  footer {
+    display: flex;
+    font-size: 12px;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #745740;
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* nav */
+  .nav-links {
+    display: none; /* Hide nav-links by default on small screens */
+    flex-direction: column; /* Stack links vertically */
+    background-color: #dbe4c6; /* Background color for mobile */
+    position: absolute; /* Overlay position */
+    top: 70px; /* Adjust based on header height */
+    right: 0;
+    left: 0; /* Full width */
+    text-align: center; /* Center text alignment */
+    z-index: 10; /* Ensure it’s on top of other content */
+    transform: translateY(-100%); /* Hide off-screen by default */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .nav-active {
+    padding: 20px;
+    display: flex; /* Show links when active */
+    transform: translateY(0); /* Slide down to show */
+  }
+
+  .burger {
+    display: flex; /* Show burger icon on small screens */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer; /* Change cursor to pointer */
+    z-index: 20; /* Ensure it’s above the nav */
+  }
+
+  .burger div {
+    width: 30px;
+    height: 3px;
+    background-color: #333; /* Color of burger lines */
+    margin: 4px 0;
+  }
+
+  .login-btn {
+    padding: 10px; /* Adjust padding for small screens */
+    font-size: 0; /* Hide text */
+    width: 40px; /* Adjust width */
+    justify-content: center; /* Center icon */
+  }
+
+  .login-icon {
+    margin-left: 0; /* Remove margin if needed */
+  }
+
+  .login-btn::before {
+    content: ""; /* Pseudo-element for icon */
+    display: none; /* Hide if not needed */
+    width: 20px;
+    height: 20px;
+    background: url("path/to/your/icon.svg") no-repeat center center;
+    background-size: contain; /* Scale icon */
+  }
+
+  .login-btn span {
+    display: none; /* Hide any text */
+  }
+  /* hero */
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: #f2f2f2;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+  .hero-content h1 {
+    color: #f2f2f2;
+    font-size: 40px;
+    text-align: center;
+    z-index: 3;
+  }
+  .hero-content h2 {
+    font-size: 36px;
+    z-index: 3;
+  }
+
+  .hero-content p {
+    line-height: 30px;
+    font-size: 16px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    z-index: 3;
+  }
+  .hero-content3 {
+    color: #745740;
+  }
+  .hero-content3 p {
+    line-height: 30px;
+    font-size: 16px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .p-set {
+    margin-top: 50px;
+    color: #236533;
+  }
+  .cta-button {
+    background-color: #848c73;
+    width: 30%;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+  }
+
+  /* about */
+  .content {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    justify-content: space-between; /* Space out text and image */
+    max-width: 1200px; /* Optional: Set a max-width for the content container */
+  }
+
+  .text {
+    margin: 30px;
+    color: #745740;
+    flex: 1; /* Allow text to take available space */
+    text-align: center; /* Align text to the left */
+  }
+  .text h2 {
+    font-size: 24px;
+    margin-bottom: 80px;
+  }
+  .text p {
+    line-height: 30px;
+    font-size: 16px;
+  }
+  /* feature */
+  #features {
+    max-width: 100%;
+    height: 50vh;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+  }
+  .feature {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .image1 {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    z-index: 2;
+  }
+  .image2 {
+    display: none;
+  }
+  .feature h3 {
+    color: #745740;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .feature p {
+    line-height: 30px;
+    color: #745740;
+    font-size: 16px;
+    margin: 0;
+  }
+  /* feature1 */
+  .icons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  #features1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .feature-left img {
+    display: none;
+  }
+  .icon-4 {
+    display: flex;
+  }
+  /* coourses */
+  .courses h2 {
+    font-size: 24px;
+  }
+  .courses h4 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .course h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .course p {
+    line-height: 30px;
+    color: #745740;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin: 20px;
+    font-size: 16px;
+    text-align: left;
+  }
+  .course-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .course img {
+    max-width: 88%;
+    border-radius: 12px;
+    height: auto;
+    margin: 20px;
+  }
+  .course-4 {
+    display: grid;
+  }
+
+  /* event */
+  .event {
+    border: 2px solid #8da66b;
+    border-radius: 12px;
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .event img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px;
+    border-radius: 12px;
+  }
+  .events h2 {
+    font-size: 24px;
+  }
+  .events h4 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .event h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .event p {
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+  /* message */
+  /* message start */
+  .message h2 {
+    background-color: #e9f0e0;
+    color: #745740;
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+  }
+  .message p {
+    font-size: 18px;
+  }
+  .contactArea {
+    background-color: #e9f0e0;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  .contact-form {
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #e9f0e0;
+  }
+  input,
+  textarea {
+    width: 90%;
+    font-size: 14px;
+  }
+  label {
+    font-size: 16px;
+  }
+  .name-fields {
+    display: flex;
+    gap: 18px;
+  }
+  .submitBTN button {
+    font-size: 16px; /* Adjust the font size */
+  }
+  /* contact-info */
+  .concontact-information {
+    font-size: 16px;
+  }
+  /* social-icon */
+  .social-icon img {
+    width: 35px;
+    height: 35px;
+  }
+  footer {
+    display: flex;
+    font-size: 12px;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #745740;
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 989px) {
+  /* nav */
+  .nav-links {
+    display: none; /* Hide nav-links by default on small screens */
+    flex-direction: column; /* Stack links vertically */
+    background-color: #dbe4c6; /* Background color for mobile */
+    position: absolute; /* Overlay position */
+    top: 70px; /* Adjust based on header height */
+    right: 0;
+    left: 0; /* Full width */
+    text-align: center; /* Center text alignment */
+    z-index: 10; /* Ensure it’s on top of other content */
+    transform: translateY(-100%); /* Hide off-screen by default */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+
+  .nav-active {
+    padding: 20px;
+    display: flex; /* Show links when active */
+    transform: translateY(0); /* Slide down to show */
+  }
+
+  .burger {
+    display: flex; /* Show burger icon on small screens */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer; /* Change cursor to pointer */
+    z-index: 20; /* Ensure it’s above the nav */
+  }
+
+  .burger div {
+    width: 30px;
+    height: 3px;
+    background-color: #333; /* Color of burger lines */
+    margin: 4px 0;
+  }
+
+  .login-btn {
+    padding: 10px; /* Adjust padding for small screens */
+    font-size: 0; /* Hide text */
+    width: 40px; /* Adjust width */
+    justify-content: center; /* Center icon */
+  }
+
+  .login-icon {
+    margin-left: 0; /* Remove margin if needed */
+  }
+
+  .login-btn::before {
+    content: ""; /* Pseudo-element for icon */
+    display: none; /* Hide if not needed */
+    width: 20px;
+    height: 20px;
+    background: url("path/to/your/icon.svg") no-repeat center center;
+    background-size: contain; /* Scale icon */
+  }
+
+  .login-btn span {
+    display: none; /* Hide any text */
+  }
+  /* hero */
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: #f2f2f2;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+  .hero-content h1 {
+    color: #f2f2f2;
+    font-size: 40px;
+    text-align: center;
+    z-index: 3;
+  }
+  .hero-content h2 {
+    font-size: 36px;
+    z-index: 3;
+  }
+
+  .hero-content p {
+    line-height: 30px;
+    font-size: 16px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    z-index: 3;
+  }
+  .hero-content3 {
+    color: #745740;
+  }
+  .hero-content3 p {
+    line-height: 30px;
+    font-size: 16px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .p-set {
+    margin-top: 50px;
+    color: #236533;
+  }
+  .cta-button {
+    background-color: #848c73;
+    width: 30%;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+  }
+
+  /* about */
+  .content {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    justify-content: space-between; /* Space out text and image */
+    max-width: 1200px; /* Optional: Set a max-width for the content container */
+  }
+
+  .text {
+    margin: 30px;
+    color: #745740;
+    flex: 1; /* Allow text to take available space */
+    text-align: center; /* Align text to the left */
+  }
+  .text h2 {
+    font-size: 24px;
+    margin-bottom: 80px;
+  }
+  .text p {
+    line-height: 30px;
+    font-size: 16px;
+  }
+  /* feature */
+  #features {
+    max-width: 100%;
+    height: 50vh;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+  }
+  .feature {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .image1 {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    z-index: 2;
+  }
+  .image2 {
+    display: none;
+  }
+  .feature h3 {
+    color: #745740;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .feature p {
+    line-height: 30px;
+    color: #745740;
+    font-size: 16px;
+    margin: 0;
+  }
+  /* feature1 */
+  .icons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  #features1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .feature-left img {
+    display: none;
+  }
+  .icon-4 {
+    display: flex;
+  }
+  /* coourses */
+  .courses h2 {
+    font-size: 24px;
+  }
+  .courses h4 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .course h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .course p {
+    line-height: 30px;
+    color: #745740;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin: 20px;
+    font-size: 16px;
+    text-align: left;
+  }
+  .course-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .course img {
+    max-width: 88%;
+    border-radius: 12px;
+    height: auto;
+    margin: 20px;
+  }
+  .course-4 {
+    display: grid;
+  }
+
+  /* event */
+  .event {
+    border: 2px solid #8da66b;
+    border-radius: 12px;
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    max-width: 100%;
+    flex-direction: row;
+  }
+  .events h2 {
+    font-size: 24px;
+  }
+  .events h4 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .event h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .event p {
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+  /* message */
+  /* message start */
+  .message h2 {
+    background-color: #e9f0e0;
+    color: #745740;
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+  }
+  .message p {
+    font-size: 18px;
+  }
+  .contactArea {
+    background-color: #e9f0e0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  .contact-form {
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #e9f0e0;
+  }
+  input,
+  textarea {
+    width: 90%;
+    font-size: 14px;
+  }
+  label {
+    font-size: 16px;
+  }
+  .name-fields {
+    display: flex;
+    gap: 18px;
+  }
+  .submitBTN button {
+    font-size: 16px; /* Adjust the font size */
+  }
+  /* contact-info */
+  .concontact-information {
+    font-size: 16px;
+  }
+  /* social-icon */
+  .social-icon img {
+    width: 35px;
+    height: 35px;
+  }
+  footer {
+    display: flex;
+    font-size: 12px;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #745740;
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-image: url("../Images/mystory-hero-3.png");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .top-img {
+    display: none;
+  }
+
+  .bottom-img {
+    margin-top: 20px;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .right-img img {
+    width: 80%;
+    height: auto;
+  }
+
+  .hero-detail {
+    max-width: 90%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .small-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 768px) and (max-width: 989px) {
+}
